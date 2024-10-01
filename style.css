@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:aquamarine;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+.container{
+    background-color: aliceblue;
+    border-radius: 2px;
+    box-shadow:7px 7px 10px 7px rgb(30, 29, 29);
+    width: calc(100vw-65vw);
+    max-width: 100%;
+}
+.header{
+    background-color: rgb(255, 106, 0);
+    padding: 15px 0;
+}
+.header h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.btn{
+    background-color: rgb(255, 106, 0);
+    border-radius: 6px;
+    border: none;
+    display: block;
+    padding: 5px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 100%;
+}    
+
+.btn:hover{
+    background: rgb(209, 110, 40); ;
+}
+.form{
+    padding: 50px;
+}
+.form_control{
+   margin-bottom: 15px;
+   position: relative;
+}
+.form_control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form_control input{
+    width: 100%;
+    border: 2px solid rgb(110, 103, 103);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+    
+}
+.form_control input:focus{
+    outline: 0;
+    border-color: black;
+}
+.form_control.success input{
+    border-color: green;
+}
+.form_control.error input{
+    border-color: red;
+}
+.form_control i{
+    position: absolute;
+    right: 18px;
+    top: 34px;
+    visibility: hidden;
+    
+}
+.form_control small{
+    visibility: hidden;
+}
+.form_control.form_control.error small{
+    visibility: visible;
+}
+.form_control small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form i.form_control.success.fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+.form i.form_control.error.fa-circle-exclamation{
+    color: red;
+    visibility: visible;
+}
